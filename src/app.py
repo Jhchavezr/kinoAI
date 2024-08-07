@@ -69,16 +69,16 @@ def get_response(user_input):
     return response['answer']
 
 # app config
-st.set_page_config(page_title="Chat with websites", page_icon="🤖")
-st.title("Chat with websites")
+st.set_page_config(page_title="Ymer Media Screenings Scheduler AI", page_icon="🎬")
+st.title("Ymer Media AI")
 
 # sidebar
 with st.sidebar:
-    st.header("Settings")
-    website_url = st.text_input("Website URL")
+    st.header("Chat options")
+    website_url = st.text_input("What is the name of your Cinema?")
 
 if website_url is None or website_url == "":
-    st.info("Please enter a website URL")
+    st.info("Please enter the name of your cinema")
 
 else:
     # session state
